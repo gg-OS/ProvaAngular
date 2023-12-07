@@ -1,0 +1,9 @@
+<div *ngFor="let cat of cats">
+    <h2>{{ cat.name }}</h2>
+    <p>Origin: {{ cat.origin }}</p>
+    <p>Temperament: {{ cat.temperament }}</p>
+    <p>Description: {{ cat.description }}</p>
+    <!-- Adicione mais campos conforme necessário -->
+    <img [src]="cat.image" alt="{{ cat.name }}" width="200" height="200">
+    <hr>
+  </div>
